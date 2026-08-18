@@ -1,0 +1,41 @@
+/* Color verde ecologico/solar personalizado para elementos especificos */
+.text-verde-solar {
+  color: #2e7d32 !important;
+}
+
+.btn-verde-solar {
+  background-color: #2e7d32 !important;
+  border-color: #2e7d32 !important;
+  color: #ffffff !important;
+}
+
+.btn-verde-solar:hover {
+  background-color: #1b5e20 !important;
+  border-color: #1b5e20 !important;
+  color: #ffffff !important;
+}
+
+.alert-warning {
+  background-color: #e8f5e9 !important;
+  border-color: #a5d6a7 !important;
+  color: #1b5e20 !important;
+}
+
+/* Mantener el color amarillo original de Bootstrap para .text-warning */
+.text-warning {
+  color: #ffc107 !important;
+}
+
+/* Configuración general para botones amarillos */
+.btn-warning {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800 !important;
+  border-color: #d39e00 !important;
+  color: #000000 !important;
+}

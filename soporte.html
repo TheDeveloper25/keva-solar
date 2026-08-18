@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte Técnico - KEVA-SOLAR</title>
+  
+  <!-- Estilos de Bootstrap y Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pagina-contacto">
+
+  <!-- Navegación -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning fs-3" href="index.html">
+          <i class="bi bi-sun-fill me-2"></i>KEVA-SOLAR
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-6">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="beneficios.html">Beneficios</a></li>
+            <li class="nav-item"><a class="nav-link" href="producto.html">Producto</a></li>
+            <li class="nav-item"><a class="nav-link active" href="soporte.html">Soporte</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Encabezado -->
+  <section class="bg-light py-5 border-bottom text-center">
+    <div class="container">
+      <h1 class="text-warning fw-bold display-5">Centro de Soporte Técnico</h1>
+      <p class="lead text-secondary col-md-8 mx-auto mt-3">
+        ¿Tienes dudas sobre el ensamblaje o mantenimiento de tu sistema KEVA-SOLAR? Estamos aquí para ayudarte.
+      </p>
+    </div>
+  </section>
+
+  <!-- Opciones de Soporte -->
+  <main class="container my-5">
+    <div class="row g-4 mb-5">
+      
+      <!-- Guías de Instalación -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 p-4 text-center">
+          <i class="bi bi-journal-text text-warning display-4 mb-3"></i>
+          <h4 class="fw-bold text-dark mb-3">Manuales e Instrucciones</h4>
+          <p class="text-secondary">
+            Consulta los pasos de armado detallados para cada modelo de estructura y módulo solar.
+          </p>
+          <a href="especificaciones.html" class="btn btn-outline-warning text-dark fw-bold mt-auto">
+            Ver Especificaciones
+          </a>
+        </div>
+      </div>
+
+      <!-- Descarga de Planos -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 p-4 text-center">
+          <i class="bi bi-file-earmark-pdf-fill text-warning display-4 mb-3"></i>
+          <h4 class="fw-bold text-dark mb-3">Planos Técnicos</h4>
+          <p class="text-secondary">
+            Descarga los esquemas detallados en alta resolución y el listado completo de piezas.
+          </p>
+          <a href="producto.html" class="btn btn-outline-warning text-dark fw-bold mt-auto">
+            Ver Planos de Producto
+          </a>
+        </div>
+      </div>
+
+      <!-- Preguntas Frecuentes -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 p-4 text-center">
+          <i class="bi bi-question-circle-fill text-warning display-4 mb-3"></i>
+          <h4 class="fw-bold text-dark mb-3">Preguntas Frecuentes</h4>
+          <p class="text-secondary">
+            Resuelve rápidamente las dudas comunes sobre compatibilidad, tornillería y mantenimiento.
+          </p>
+          <a href="faq.html" class="btn btn-outline-warning text-dark fw-bold mt-auto">
+            Ir a FAQ
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Formulario de Solicitud de Asistencia -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0 p-4">
+          <h3 class="text-warning fw-bold mb-3"><i class="bi bi-headset me-2"></i>Solicitar Asistencia Técnica</h3>
+          <p class="text-secondary mb-4">
+            Envíanos los detalles de tu consulta técnica y nuestro equipo te responderá lo antes posible.
+          </p>
+          
+          <form id="supportForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nombreSupport" class="form-label fw-bold">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombreSupport" placeholder="Ej. Carlos Ortiz" required>
+              </div>
+              <div class="col-md-6">
+                <label for="emailSupport" class="form-label fw-bold">Correo Electrónico</label>
+                <input type="email" class="form-control" id="emailSupport" placeholder="correo@ejemplo.com" required>
+              </div>
+              <div class="col-md-6">
+                <label for="modelo" class="form-label fw-bold">Modelo de Sistema</label>
+                <select class="form-select" id="modelo" required>
+                  <option value="" selected disabled>Selecciona tu modelo</option>
+                  <option value="keva3">KEVA 3 (3 Paneles)</option>
+                  <option value="keva4">KEVA 4 (4 Paneles)</option>
+                  <option value="otro">Otro / Consulta General</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="telefonoSupport" class="form-label fw-bold">Teléfono de Contacto</label>
+                <input type="tel" class="form-control" id="telefonoSupport" placeholder="+1 (787) 000-0000">
+              </div>
+              <div class="col-12">
+                <label for="detalleProblema" class="form-label fw-bold">Descripción de la Consulta / Problema</label>
+                <textarea class="form-control" id="detalleProblema" rows="4" placeholder="Describe tu consulta sobre piezas, ensamble o estructura..." required></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-warning w-100 fw-bold fs-5">
+                  <i class="bi bi-send-fill me-2"></i>Enviar Solicitud
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-black text-white text-center py-4 mt-5 border-top">
+    <div class="container">
+      <p class="mb-0 text-white fw-bold text-center">&copy; <span class="text-warning">2026 KEVA-SOLAR</span>. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
